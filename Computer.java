@@ -11,6 +11,7 @@ public class Computer
     private Processor theProcessor;
     private HardDisk theHardDisk;
     private Display theDisplay;
+    private int computerCost;
     
     public Computer(){
         theProcessor = new Processor();
@@ -33,6 +34,11 @@ public class Computer
         int costOfDisplay = theDisplay.getCost();
         int costOfComputer = costOfProcessor + costOfHardDisk + costOfDisplay;
         System.out.println("Cost of computer is " + costOfComputer);
+    computerCost = costOfComputer;
+    }
+    
+    public int getCost(){
+    return computerCost;
     
     }
  
