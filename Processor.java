@@ -2,7 +2,7 @@
 /**
  * Write a description of class Processor here.
  *
- * @author (your name)
+ * @Danning & Waseem (your name)
  * @version (a version number or a date)
  */
 public class Processor
