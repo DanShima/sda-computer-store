@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Processor
+comment0.text=\n\ Write\ a\ description\ of\ class\ Processor\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=manufacturer\ clockspeed\ cost
+comment1.target=Processor(java.lang.String,\ int,\ int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Processor\n
+comment2.params=
+comment2.target=java.lang.String\ getManufacturer()
+comment2.text=\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\n\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\n
+comment3.params=
+comment3.target=int\ getClockspeed()
+comment4.params=
+comment4.target=int\ getCost()
+comment5.params=manufacturer
+comment5.target=void\ changeManufacturer(java.lang.String)
+comment6.params=clockspeed
+comment6.target=void\ changeClockspeed(int)
+comment7.params=cost
+comment7.target=void\ changeCost(int)
+comment8.params=
+comment8.target=void\ printProcessorSummary()
+numComments=9
