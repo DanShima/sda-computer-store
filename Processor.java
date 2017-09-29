@@ -43,7 +43,7 @@ public class Processor
         return manufacturer;
     }
     
-    public int getClockspeed(){
+    public double getClockspeed(){
         return clockspeed;
     }
     
