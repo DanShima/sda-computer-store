@@ -28,10 +28,10 @@ public class Computer
     }
     
     public void costOfComputer(){
-        costOfProcessor = theProcessor.getCost();
-        costOfHardDisk = theHardDisk.getCost();
-        costOfDisplay = theDisplay.getCost();
-        costOfComputer = costOfProcessor + costOfHardDisk + costOfDisplay;
+        int costOfProcessor = theProcessor.getCost();
+        int costOfHardDisk = theHardDisk.getCost();
+        int costOfDisplay = theDisplay.getCost();
+        int costOfComputer = costOfProcessor + costOfHardDisk + costOfDisplay;
         System.out.println("Cost of computer is " + costOfComputer);
     
     }
