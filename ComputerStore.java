@@ -80,9 +80,45 @@ public class ComputerStore
         } 
     }
     
-   public Computer findMostExpensiveComputerV1( ) { 
+   public Computer findMostExpensiveComputerV1( ) {         
+    // This version will use a traditional for loop
+     if(isValidIndex(0)){
+           Computer expensive = computers.get(0);
+         for(int i = 0; i < computers.size(); i++) {
+             if(computer.getCost(i) > expensive.getCost()){
+                   expensive = computer;
+               }           
+        } 
+         return expensive;         
+    } 
+       return null;
+   }
        
-       if(isValidIndex(0)){
+    public Computer findMostExpensiveComputerV2( ) { }
+    // This version will use a traditional while loop
+    
+      public Computer findMostExpensiveComputerV1( )
+      {         
+         if(isValidIndex(0))
+         {
+              Computer expensive = computers.get(0);
+              int i = 0; 
+             while(i < computers.size()) 
+               {
+                   if(computer.getCost(i) > expensive.getCost())
+                       {
+                         expensive = computer;
+                       }  
+                  i++ ;
+               } 
+            return expensive;         
+          } 
+       return null;
+      }
+       
+    public Computer findMostExpensiveComputerV3( ) { }
+    // This version will use a for-each loop
+     if(isValidIndex(0)){
            Computer expensive = computers.get(0);
            
            for(Computer computer : computers){
@@ -96,14 +132,23 @@ public class ComputerStore
        }
        return null;
     }
-    // This version will use a traditional for loop
-    
-    public Computer findMostExpensiveComputerV2( ) { }
-    // This version will use a traditional while loop
-    
-    public Computer findMostExpensiveComputerV3( ) { }
-    // This version will use a for-each loop
-    
-    public Computer findMostExpensiveComputerV4( ) { }
-    // This version will use an Iterator object with a while loop
+                   
+                   // This version will use an Iterator object with a while loop
+    public Computer findMostExpensiveComputerV4( ){ 
+          if(isValidIndex(0)){
+             Iterator<Computer> it = computers.iterator();
+             while(it.hasNext()){  
+                 Computer expensive = computers.get(0);
+                 Computer computer = it.next();
+                  if(computer.getCost() > expensive.getCost()){
+                      expensive = computer;
+                               }        
+         
+                        }
+             return expensive ;
+          }
+        return null ;
+    }
+
+
 }
