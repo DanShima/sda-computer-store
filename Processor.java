@@ -1,0 +1,72 @@
+
+/**
+ * Write a description of class Processor here.
+ *
+ * @Danning & Waseem (your name)
+ * @version (a version number or a date)
+ */
+public class Processor extends Component 
+{
+    private String manufacturer;
+    private double clockspeed;
+    private int cost;
+
+     /**
+     * Constructor for objects of class Processor
+     */
+    public Processor()
+    {
+        super("AMD", 80);
+        clockspeed = 1.8;
+      
+    }     
+    
+    
+    /**
+     * Constructor for objects of class Processor
+     */
+    public Processor(String manufacturer, double clockspeed, int cost)
+    {
+        super(manufacturer, cost);
+        this.clockspeed = clockspeed;
+       
+    }
+
+    /**
+     * An example of a method - replace this comment with your own
+     *
+     * @param  y  a sample parameter for a method
+     * @return    the sum of x and y
+     */
+    //getters
+    public String getManufacturer() {
+        return manufacturer;
+    }
+    
+    public double getClockspeed(){
+        return clockspeed;
+    }
+    
+    public int getCost() {
+        return cost;
+    }
+    
+    //setters
+    public void changeManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+    
+    public void changeClockspeed(int clockspeed) {
+        this.clockspeed = clockspeed;
+    }
+    
+    public void changeCost(int cost) {
+        this.cost = cost;
+    }
+    
+    public void printProcessorSummary()
+    {
+        System.out.println("The manufacturer of this computer is " + getManufacturer() + 
+        " and the cost is " + getCost() + " and the clockspeed is " + getClockspeed());
+    }
+}
