@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.HashMap;
 
 
 /**
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class ComputerStore
 {
     // instance variables - replace the example below with your own
-    private ArrayList<Computer> computers;
+    private HashMap<Computer> computers;
 
     /**
      * Constructor for objects of class ComputerStore
@@ -18,7 +18,7 @@ public class ComputerStore
     public ComputerStore()
     {
         // initialise instance variables
-        computers = ArrayList<>();
+        computers = HashMap<>();
         
         
     }
