@@ -8,37 +8,38 @@
 public class HardDisk extends Component
 {
     // instance variables - replace the example below with your own
-    private String StorageCapacity;
-    private String DataTransferRate;
+    private String storageCapacity;
+    private String dataTransferRate;
     /**
      * Constructor for objects of class HardDisk
      */
-    public HardDisk(String StorageCapacity,String DataTransferRate,String Company,int cost)
+    public HardDisk(String storageCapacity,String dataTransferRate,String company,int cost)
     {
-     super(Company);
+     super(company, cost);
      this.StorageCapacity=StorageCapacity;
      this.DataTransferRate=DataTransferRate;
     }
 
      public String getStorageCapacity()
     {
-        return StorageCapacity;
+        return storageCapacity;
     }
     public String getDataTransferRate()
     {
-        return DataTransferRate;
+        return dataTransferRate;
     }
     
     
-    public void setStorageCapacity(String StorageCapacity)
-    { this.StorageCapacity=StorageCapacity;
+    public void setStorageCapacity(String storageCapacity)
+    { this.storageCapacity = storageCapacity;
     
     }
-    public void setDataTransferRate(String DataTransferRate)
-    { this.DataTransferRate=DataTransferRate;
+    public void setDataTransferRate(String dataTransferRate)
+    { this.dataTransferRate = dataTransferRate;
     
     }
     public void printHardDiskSummry(){    
-    System.out.println("The cost is "+cost+" and the Storage capacity is "+StorageCapacity+" from "+Company+" with "+DataTransferRate+" Data transfer rate.");
+    System.out.println("The cost is "+super.getCost()+" and the Storage capacity is "+storageCapacity
+                        +" from "+ super.getDescription()+" with "+dataTransferRate+" Data transfer rate.");
     }
 }
