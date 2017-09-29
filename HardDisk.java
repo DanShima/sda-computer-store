@@ -15,7 +15,7 @@ public class HardDisk extends Components
      */
     public HardDisk(String StorageCapacity,String DataTransferRate,String Company,int cost)
     {
-     super(Company)
+     super(Company);
      this.StorageCapacity=StorageCapacity;
      this.DataTransferRate=DataTransferRate;
     }
