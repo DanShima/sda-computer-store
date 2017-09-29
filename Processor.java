@@ -2,71 +2,57 @@
 /**
  * Write a description of class Processor here.
  *
- * @Danning & Waseem (your name)
- * @version (a version number or a date)
+ * @Danning, Max & Waseem
+ * @version (2017/09/29)
  */
 public class Processor extends Component 
 {
-    private String manufacturer;
-    private double clockspeed;
-    private int cost;
-
-     /**
+    private double clockSpeed;
+   
+    /**
      * Constructor for objects of class Processor
      */
     public Processor()
     {
         super("AMD", 80);
-        clockspeed = 1.8;
-      
+        clockSpeed = 1.8;
     }     
     
     
     /**
      * Constructor for objects of class Processor
      */
-    public Processor(String manufacturer, double clockspeed, int cost)
+    public Processor(String manufacturer, double clockSpeed, int cost)
     {
         super(manufacturer, cost);
-        this.clockspeed = clockspeed;
+        this.clockSpeed = clockSpeed;
        
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Getter for the variable clockspeed
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @return    the clockspeed of the processor
      */
-    //getters
-    public String getManufacturer() {
-        return manufacturer;
-    }
-    
-    public double getClockspeed(){
+    public double getClockSpeed(){
         return clockspeed;
     }
     
-    public int getCost() {
-        return cost;
+    /**
+     * Setter for the variable clockspeed
+     *
+     * @param   the new speed of the processor
+     */
+    public void changeClockspeed(int clockSpeed) {
+        this.clockSpeed = clockSpeed;
     }
     
-    //setters
-    public void changeManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
-    
-    public void changeClockspeed(int clockspeed) {
-        this.clockspeed = clockspeed;
-    }
-    
-    public void changeCost(int cost) {
-        this.cost = cost;
-    }
-    
+    /**
+     * print the details of the processor
+     */
     public void printProcessorSummary()
     {
-        System.out.println("The manufacturer of this computer is " + getManufacturer() + 
-        " and the cost is " + getCost() + " and the clockspeed is " + getClockspeed());
+        System.out.println("The manufacturer of this computer is " + super.getManufacturer() + 
+        " and the cost is " + super.getCost() + " and the clockspeed is " + clockSpeed);
     }
 }
