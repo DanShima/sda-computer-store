@@ -8,13 +8,24 @@
 public class Processor
 {
     private String manufacturer;
-    private int clockspeed;
+    private double clockspeed;
     private int cost;
 
+     /**
+     * Constructor for objects of class Processor
+     */
+    public Processor()
+    {
+        manufacturer = "AMD";
+        clockspeed = 1.8;
+        cost = 80;
+    }     
+    
+    
     /**
      * Constructor for objects of class Processor
      */
-    public Processor(String manufacturer, int clockspeed, int cost)
+    public Processor(String manufacturer, double clockspeed, int cost)
     {
         this.manufacturer = manufacturer;
         this.clockspeed = clockspeed;
